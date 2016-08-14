@@ -1,0 +1,23 @@
+  const turingRobot = require('./turingRobot');
+  const autoReply = require('./autoReply');
+  const wechat = require('wechat');
+
+  module.exports = function(app) {
+
+    //use wechat middleware
+    var config = {
+      token: 'quanru',
+      appid: 'wxdc6410f1001d787b',
+      encodingAESKey: 'IJwymet3h2KzGSTPxMnITc25pGiSzSlWCXHUhcvQRzc'
+    };
+    app.use('/wechat', wechat(config, (req, res, next) => {
+      var message = req.weixin;
+      var content = message.Content;
+      turingRobot(encodeURI(content))
+        .then((data) => {
+          var response = JSON.parse(data);
+          res.reply(response.text);
+        });
+    }));
+
+  }

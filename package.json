@@ -1,11 +1,15 @@
 {
-  "name": "@tihu/share",
-  "version": "2.1.1",
-  "description": "醍醐的分享",
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "tihu@wacai.com",
-  "license": "ISC"
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jssha": "^1.6.0",
+    "wechat": "^2.0.3"
+  }
 }
