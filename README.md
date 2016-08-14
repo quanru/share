@@ -1,4 +1,4 @@
-[2015-11-13->](https://quanru.github.io/share/2015-11-13.htmll) 
+[2015-11-13->](https://quanru.github.io/share/2015-11-13.html) 
 >插件分享&Snippets
 
 [2016-04-15->](https://quanru.github.io/share/2016-04-15.html) 
